@@ -1,10 +1,52 @@
 .header{
   position: fixed;
   display: flex;
-  background-color: white;
-  opacity: 0.3;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
 }
 
-.buttonsWrapper{
-  right: 0;
+.navWrapper{
+  margin: 0.5rem;
+  width: 100%;
+  margin-right:2rem
+}
+
+.commonButton{
+  margin: 0.5rem;
+  background-color: transparent;
+  color: white;
+  border-color: transparent;
+  font-size: 1fr;
+  font-weight: 700;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.listWrapper{
+  display: flex ;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  list-style-type: none;
+  gap: 2vw;
+}
+
+.writeMe{
+  background-color: rgb(255,0,191);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 2rem;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header h1{
+  margin: 0.5rem;
+  font-size: 1wm
 }

@@ -60,6 +60,8 @@
   width: 15vw;
   height: 15vw;
   border-radius: 20%;
+  min-width: 9rem;
+  min-height: 9rem;
 }
 
 .nextButton{
