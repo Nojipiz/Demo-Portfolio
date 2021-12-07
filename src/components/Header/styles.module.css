@@ -1,0 +1,10 @@
+.header{
+  position: fixed;
+  display: flex;
+  background-color: white;
+  opacity: 0.3;
+}
+
+.buttonsWrapper{
+  right: 0;
+}
