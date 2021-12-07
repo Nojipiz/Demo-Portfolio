@@ -6,7 +6,7 @@ class Header extends Component {
   render() {
     return (
       <header className={styles.header}>
-        <h1> Pepe </h1>
+        <h1>Asuna</h1>
 
         <nav className={styles.navWrapper}>
           <ul className={styles.listWrapper}>

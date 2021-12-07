@@ -12,10 +12,10 @@ class MainBanner extends Component {
         <section className={styles.mainWrapper}>
           <div className={styles.container}>
             <h2> ¡Hola! Me llamo </h2>
-            <h1> Pepe Perez</h1>
+            <h1>Asuna Yuuki</h1>
             <span>
               <span className={styles.typingText}>
-                Web Desinger
+                SAO Character
               </span>
               <span className={styles.typingCursor}>|</span>
             </span>
