@@ -1,0 +1,17 @@
+@import '/src/styles/globals.css';
+
+
+.mainSection{
+  background-color: var(--color-purple-dark);
+  height: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentWrapper img{
+}
+
+.aboutMeWrapper{
+
+}
