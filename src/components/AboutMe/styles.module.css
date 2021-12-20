@@ -3,7 +3,8 @@
 
 .mainSection{
   background-color: var(--color-purple-dark);
-  height: 60rem;
+  height: 50vw;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
