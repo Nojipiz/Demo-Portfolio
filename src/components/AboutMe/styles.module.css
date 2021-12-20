@@ -9,9 +9,33 @@
   justify-content: center;
 }
 
+.contentWrapper{
+  display: flex ;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+  width: 100% ;
+}
+
 .contentWrapper img{
+  width: 30%;
 }
 
 .aboutMeWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
 
+.titleList{
+  list-style-type: none;
+}
+
+.titleList li{
+  margin-right: 2rem;
+  float: left;
+}
+
+.titleList li a{
+  display: block;
 }
