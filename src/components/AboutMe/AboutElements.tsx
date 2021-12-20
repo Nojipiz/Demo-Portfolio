@@ -26,7 +26,15 @@ class AboutElements extends Component<{}, IState>{
   }
 
   profileElement(): ReactElement {
-    return <h1>Profile elemenet</h1>
+    return (
+      <>
+        <p>En este espacio puedes contar un poco <b> mas sobre ti </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
+        <div className={styles.buttonsWrapper}>
+          <button className={styles.infoButton}>Escribeme</button>
+          <button className={styles.infoButton}>Descargar CV</button>
+        </div>
+      </>
+    )
   }
 
   studyElement(): ReactElement {
@@ -42,7 +50,9 @@ class AboutElements extends Component<{}, IState>{
       <>
         <ul className={styles.titleList}>
           {this.elementList.map((element: Element) => {
-            return <li><a>{element.title}</a></li >
+            return <li><a onClick={() => {
+              this.setState({ currentElement: element })
+            }}   >{element.title}</a></li >
           })}
         </ul>
         {this.state.currentElement.content}

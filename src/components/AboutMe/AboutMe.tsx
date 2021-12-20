@@ -7,7 +7,9 @@ class AboutMe extends Component {
     return (
       <section className={styles.mainSection}>
         <div className={styles.contentWrapper}>
-          <img src="photo-me.png" />
+          <div className={styles.imageWrapper}>
+            <img src="photo-me.png" />
+          </div>
           <div className={styles.aboutMeWrapper}>
             <AboutElements />
           </div>
