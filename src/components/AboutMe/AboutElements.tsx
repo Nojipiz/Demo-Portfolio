@@ -10,6 +10,7 @@ type Element = {
   content: ReactElement
 }
 
+
 class AboutElements extends Component<{}, IState>{
 
   elementList: Element[] = [
@@ -28,7 +29,7 @@ class AboutElements extends Component<{}, IState>{
   profileElement(): ReactElement {
     return (
       <>
-        <p>En este espacio puedes contar un poco <b> mas sobre ti </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
+        <p className={styles.elementText}>En este espacio puedes contar un poco <b> mas sobre ti </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
         <div className={styles.buttonsWrapper}>
           <button className={styles.infoButton}>Escribeme</button>
           <button className={styles.infoButton}>Descargar CV</button>
@@ -38,7 +39,17 @@ class AboutElements extends Component<{}, IState>{
   }
 
   studyElement(): ReactElement {
-    return <h1> Study element </h1>
+    return (
+      <>
+        <p className={styles.elementText}> Listado de tecnologias que utilizas</p>
+        <ul>
+          <li>Tecnologia 1</li>
+          <li>Tecnologia 2</li>
+          <li>Tecnologia 3</li>
+          <li>Tecnologia 4</li>
+        </ul>
+      </>
+    )
   }
 
   skillsElement(): ReactElement {
