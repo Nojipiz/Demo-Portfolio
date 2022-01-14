@@ -30,10 +30,6 @@ class AboutElements extends Component<{}, IState>{
     return (
       <>
         <p className={styles.elementText}>En este espacio puedes contar un poco <b> mas sobre ti </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
-        <div className={styles.buttonsWrapper}>
-          <button className={styles.infoButton}>Escribeme</button>
-          <button className={styles.infoButton}>Descargar CV</button>
-        </div>
       </>
     )
   }
@@ -41,19 +37,17 @@ class AboutElements extends Component<{}, IState>{
   studyElement(): ReactElement {
     return (
       <>
-        <p className={styles.elementText}> Listado de tecnologias que utilizas</p>
-        <ul>
-          <li>Tecnologia 1</li>
-          <li>Tecnologia 2</li>
-          <li>Tecnologia 3</li>
-          <li>Tecnologia 4</li>
-        </ul>
+        <p className={styles.elementText}>En este espacio puedes contar un poco <b> mas sobre tus estudios </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
       </>
     )
   }
 
   skillsElement(): ReactElement {
-    return <h1> Skills Element</h1>
+    return (
+      <>
+        <p className={styles.elementText}>En este espacio puedes contar un poco <b> sobre tus skills </b>, que tecnologias manejas, que te gusta hacer y en que te especializas</p>
+      </>
+    )
   }
 
   render() {
@@ -63,7 +57,7 @@ class AboutElements extends Component<{}, IState>{
           {this.elementList.map((element: Element) => {
             return <li><a onClick={() => {
               this.setState({ currentElement: element })
-            }}   >{element.title}</a></li >
+            }}   >{element.title}</a></li>
           })}
         </ul>
         {this.state.currentElement.content}

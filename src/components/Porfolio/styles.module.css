@@ -1,0 +1,30 @@
+@import '/src/styles/globals.css';
+
+.mainSection{
+  background-color: var(--color-purple-dark);
+  height: 50vw;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainTitle{
+  font-size: 3em;
+  color: var(--color-purple-light);
+}
+
+.elementsList{
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+.elementContainer{
+  margin: 2rem;
+  padding: 1rem;
+  background-color: red;
+  display: inline;
+  min-width: 20rem;
+}
